@@ -1,9 +1,9 @@
 const Head = () => {
   return (
     <>
-      <title>Next Boilerplate</title>
+      <title>Open Shot</title>
       <meta content="width=device-width, initial-scale=1" name="viewport" />
-      <meta name="description" content="⚛️ Next.js + TypeScript Boilerplate" />
+      <meta name="description" content="Open Shot: Generate Image using AI" />
       <link rel="icon" href="/favicon.ico" />
     </>
   )

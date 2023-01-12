@@ -6,24 +6,27 @@ module.exports = {
     "./src/**/*.{ts,tsx}"
   ],
   theme: {
+    colors: {
+      dark: '#01070E',
+      darker: '#05070D',
+      light: '#EDF0F6',
+      lighter: '#FAFAFE',
+      darkGray: '#3D4048',
+      gray: '#C7C8CC',
+      green: '#86FD9A',
+      lilac:'#86FD9A',
+      red: '#FD8686'
+    },
     fontSize: {
-      sm: '0.750rem',
       base: '1rem',
-      'h6': '1.333rem',
-      'h5': '1.777rem',
-      'h4': '2.369rem',
-      'h3': '3.157rem',
-      'h2': '4.209rem',
-      'h1': '5.610rem',
+      'h1-mb': '4rem',
+      'h1': '6rem'
     },
     extend: {
       fontFamily: {
-        inter: ['var(--font-inter)', ...fontFamily.sans]
-      },
-      dropShadow: {
-        'default': '0px 5px 10px rgba(0, 0, 0, 0.12)'
+        sans: ['var(--font-space_grotesk)', ...fontFamily.sans]
       }
-    },
+    }
   },
   plugins: [],
 }
