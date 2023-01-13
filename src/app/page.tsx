@@ -1,9 +1,10 @@
-import { Button, Form, Logo } from '@/components'
+import { ImageGenerator, Logo } from '@/components'
 
-const Home = () => {
+const Home = async () => {
+
   return (
-    <section className='w-full flex flex-col items-center'>
-      <h1 className='text-h1-mb md:text-h1 font-bold flex items-center space-x-2'>
+    <section className='flex w-full flex-col items-center'>
+      <h1 className='flex items-center space-x-2 text-h1-mb font-bold md:text-h1'>
         <span>Open</span>
         <span role="img" aria-label='open shot'>
           <Logo />
@@ -12,12 +13,7 @@ const Home = () => {
       </h1>
       <p>Generate images using AI</p>
 
-      <div className='w-full mt-8 flex items-center justify-between md:justify-around space-x-[12px]'>
-        <Button label="Provide a phrase" />
-        <Button label="Lucky shot!" theme="gray" />
-      </div>
-
-      <Form />
+      <ImageGenerator />
     </section>
   )
 }

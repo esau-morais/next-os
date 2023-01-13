@@ -20,8 +20,8 @@ const RootLayout = ({
       fontSans.variable
     )}>
       <head />
-      <body className='w-full min-h-screen'>
-        <main className='md:max-w-3xl md:mx-auto p-4'>
+      <body className='min-h-screen w-full'>
+        <main className='p-4 md:mx-auto md:max-w-3xl'>
           {children}
         </main>
       </body>
