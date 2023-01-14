@@ -12,7 +12,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
       const response = await openAi.createImage({
         prompt: payload.prompt,
         n: 3,
-        size: '1024x1024',
+        size: '512x512',
       })
 
       return res.json(response.data.data)

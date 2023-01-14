@@ -1,14 +1,12 @@
-# Next Boilerplate 
-⚛️ React + TypeScript Boilerplate
+# Next Open Shot 
 
-## ⚡ Features
+## ⚡ Features / Roadmap
 
-- [X] ESLint most used rules
-- [X] Tailwind CSS default configuration
-- [X] Unit testing with Vitest
-- [X] Continuous Integration with GitHub Actions
-- [ ] E2E Testing with Cypress
-- [ ] Dockerize project
+- [X] Open AI image generation 
+- [ ] Access each image using a dynamic route 
+- [ ] Generate variants by image 
+- [ ] Store image's URL only if user wants to
+- [ ] Share
 
 ## 🛠️ Setup
 
@@ -17,19 +15,19 @@
 2. Clone
 
 ```
-gh repo clone your-username/boilerplate.ts
+gh repo clone your-username/next-os
 ```
 
-3. Installing (using yarn)
+3. Installing (using `pnpm`)
 
 ```
-yarn install 
+pnpm install 
 ```
 
-4. Running (using yarn)
+4. Running (using `pnpm`)
 
 ```
-yarn dev
+pnpm dev
 ```
 
 > :information_source: If you want to use Docker alternatively, check down below:

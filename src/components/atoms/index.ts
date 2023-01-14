@@ -1,3 +1,6 @@
+export { default as AsteriskIcon } from './AsteriskIcon'
 export { default as Button } from './Button'
 export { default as FlareIcon } from './FlareIcon'
+export { default as FreeIcon } from './FreeIcon'
 export { default as Logo } from './Logo'
+export { default as TwinkleIcon } from './TwinkleIcon'

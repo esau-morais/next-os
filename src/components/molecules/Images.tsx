@@ -3,6 +3,8 @@ import Image from 'next/image'
 
 import { ImagesResponseDataInner } from 'openai'
 
+import ImagesFallback from './ImagesFallback'
+
 type ImagesProps = {
   images?: ImagesResponseDataInner[]
   prompt: string
@@ -18,8 +20,8 @@ const Images = ({ images, prompt }: ImagesProps) => {
             key={images[0].url}
             src={images[0].url ?? ''}
             alt={prompt}
-            width={720}
-            height={480}
+            width={512}
+            height={512}
             sizes="(max-width: 640px) 100vw,
                   (max-width: 1280px) 50vw,
                   (max-width: 1536px) 33vw,
@@ -44,7 +46,7 @@ const Images = ({ images, prompt }: ImagesProps) => {
             ))}
           </div>
         </>
-      ) : null}
+      ) : <ImagesFallback />}
     </>
   )
 }

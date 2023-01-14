@@ -4,7 +4,9 @@ const nextConfig = {
     appDir: true,
   },
   images: {
-    domains: ['oaidalleapiprodscus.blob.core.windows.net']
+    domains: [
+      'oaidalleapiprodscus.blob.core.windows.net',
+    ]
   }
 }
 
