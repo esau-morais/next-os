@@ -19,7 +19,7 @@ export const metadata = {
     title: 'Open Shot | Generate Images using AI',
     description: 'Generate Images using AI',
     images: {
-      url: 'https://os.emots.dev',
+      url: 'https://os.emots.dev/og_image.png',
       width: 1600,
       height: 630,
     },
