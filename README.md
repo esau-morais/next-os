@@ -4,8 +4,8 @@
 
 - [X] Open AI image generation 
 - [ ] Access each image using a dynamic route 
-- [ ] Generate variants by image 
-- [ ] Store image's URL only if user wants to
+- [ ] Generate Variant's by Image 
+- [ ] Store image's URL Only if user wants to
 - [ ] Share
 
 ## 🛠️ Setup

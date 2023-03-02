@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
 
-import { Space_Grotesk as FontSans } from '@next/font/google'
+import { Space_Grotesk as FontSans } from 'next/font/google'
 const fontSans = FontSans({
   subsets: ['latin'],
   variable: '--font-space_grotesk'
@@ -8,6 +8,46 @@ const fontSans = FontSans({
 
 import './globals.css'
 import { cx } from '@/utils/classNames'
+
+export const metadata = {
+  title: 'Open Shot | Generate Images using AI',
+  description: 'Generate Images using AI',
+  openGraph: {
+    locale: 'en-UK',
+    type: 'website',
+    url: 'https://os.emots.dev',
+    title: 'Open Shot | Generate Images using AI',
+    description: 'Generate Images using AI',
+    images: {
+      url: 'https://os.emots.dev',
+      width: 1600,
+      height: 630,
+    },
+  },
+  twitter: {
+    card: 'summary_large_image',
+    url: 'https://os.emots.dev',
+    title: 'Open Shot | Generate Images using AI',
+    description: 'Generate Images using AI',
+    images: {
+      url: 'https://os.emots.dev/og_image.png',
+      width: 1600,
+      height: 630,
+    },
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+    },
+  },
+  icons: {
+    shortcut: '/favicon.ico',
+  },
+}
 
 const RootLayout = ({
   children,

@@ -1,7 +1,6 @@
 import { ImageGenerator, Logo } from '@/components'
 
 const Home = async () => {
-
   return (
     <section className='flex w-full flex-col items-center'>
       <h1 className='flex items-center space-x-2 text-h1-mb font-bold md:text-h1'>

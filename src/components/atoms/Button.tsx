@@ -31,7 +31,7 @@ const Button = ({ className, type = 'button', label, icon, theme = 'light', ...p
   return (
     <button
       className={cx(
-        'flex items-center justify-center min-h-[60px] w-full max-w-[256px] rounded-full font-medium',
+        'flex items-center justify-center min-h-[60px] max-w-[256px] rounded-full font-medium disabled:cursor-not-allowed disabled:opacity-95',
         deepThemeMap[theme],
         icon && !label ? deepSpacingMap['icon-only'] : deepSpacingMap.default,
         className

@@ -1,6 +1,7 @@
 'use client'
 import Image from 'next/image'
 
+import { shimmer, toBase64 } from '@/utils/shimmer'
 import { ImagesResponseDataInner } from 'openai'
 
 import ImagesFallback from './ImagesFallback'
@@ -27,6 +28,10 @@ const Images = ({ images, prompt }: ImagesProps) => {
                   (max-width: 1536px) 33vw,
                   25vw"
             priority
+            placeholder="blur"
+            blurDataURL={`data:image/svg+xml;base64,${toBase64(
+              shimmer(512, 512)
+            )}`}
           />
           <div className='mt-8 flex items-center space-x-8'>
             {images.slice(1).map(image => (
@@ -42,6 +47,10 @@ const Images = ({ images, prompt }: ImagesProps) => {
                   (max-width: 1536px) 33vw,
                   25vw"
                 loading='lazy'
+                placeholder="blur"
+                blurDataURL={`data:image/svg+xml;base64,${toBase64(
+                  shimmer(64, 64)
+                )}`}
               />
             ))}
           </div>
